@@ -32,6 +32,15 @@ body {
   font-weight: 200;
   font-size: smaller;
   font-style: normal;
+  position: relative;
+}
+.navbar a.active::before {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 1px;
+  border-bottom: 2px solid rgb(129, 126, 126);
+  bottom: 2px;
 }
 .search {
   display: flex;
